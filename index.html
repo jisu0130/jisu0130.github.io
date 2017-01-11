@@ -1,8 +1,8 @@
 ---
 layout: home
-main-title: "bae jisu blog"
-subtitle: "Photo Journal"
-description: "Photography and more"
+main-title: "Bae jisu blog"
+subtitle: "Cleats Design"
+description: "Design and Rview"
 images:
  - image_path: /img/slider/home01.jpg
    gallery-folder: /img/slider/
@@ -42,37 +42,20 @@ images:
 
 			<!-- WYSIWYG -->
 
-		<div class="position-absolute">
+		<div id="htmltitle" class="position-absolute" >
 				<h2 class="big no-margin"><strong>{{ page.main-title }}</strong></h2>
 				<h2>{{ page.subtitle }}</h2> 
                      <div class="entry-summary">
 							<p>{{ page.description }}</p>
 						</div><br />
 			</div>
-			
-			<div class="gallery fullscreen-gallery kenburns-gallery">
-
-				<canvas id="kenburns"></canvas>
-				
-{% for image in page.images %}  	
-
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
-
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-	
-				</header>	
-				</figure>
-
-{% endfor %}
-
-				</div>
 			<!-- END WYSIWYG -->
 			
 	
 		</div><!-- END .wrapper -->
 		
+      
+      <img id="wallpaper" src="asset/wp10.jpg">
 	</section>
 
 <div id="footer" role="contentinfo">
